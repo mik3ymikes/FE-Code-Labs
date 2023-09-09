@@ -56,3 +56,5 @@ const user={
 
 }
 user.listHobbies()
+
+//testing to see if clone works
