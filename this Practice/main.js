@@ -44,17 +44,86 @@
 
 
 
-const user={
-    firstName:"Patrick",
-    lastName:"Scott",
-    hobbies:["programming", "piano"],
-    listHobbies:function(){
-        this.hobbies.forEach(function(hobby){
-            console.log(hobby)
-        })
-    }
+// const user={
+//     firstName:"Patrick",
+//     lastName:"Scott",
+//     hobbies:["programming", "piano"],
+//     listHobbies:function(){
+//         this.hobbies.forEach(function(hobby){
+//             console.log(hobby)
+//         })
+//     }
 
+// }
+// user.listHobbies()
+
+
+
+// let games={
+//     zelda:"links awakening",
+//     mario: "super mario 3",
+//     metroid:"super metroid",
+//     finalFantasy:"ff7",
+
+//     ChadsFavorite:function(){
+//         console.log("his fav is " + this.zelda)
+//         let mikesFav=()=>console.log("his favorite is " + this.metroid)
+//         mikesFav()
+//     }
+// }
+
+// games.ChadsFavorite()
+
+
+
+
+// let games={
+//     zelda:"links awakening",
+//     mario: "super mario 3",
+//     metroid:"super metroid",
+//     finalFantasy:"ff7",
+//     hobbies:["games", "movies", "stuff"],
+//     listHobbies:function(){
+//         for(let hobby in this.hobbies){
+//             console.log(this.hobbies[hobby])
+//         }
+//     }
+// }
+// games.listHobbies()
+
+
+// let games={
+//     zelda:"links awakening",
+//     mario: "super mario 3",
+//     metroid:"super metroid",
+//     finalFantasy:"ff7",
+//     hobbies:["games", "movies", "stuff"],
+//     listHobbies:function(){
+//         this.hobbies.forEach(function(hobby){
+//             console.log(hobby)
+//             console.log(this.zelda)
+            
+//         }, this)
+//         }
+//     }
+
+// games.listHobbies()
+
+
+
+// let blah=["hi", "nah", "jah"]
+
+
+// blah.forEach(function(o){
+//     console.log(o)
+// })
+
+
+
+function User(name){
+    this.name=name,
+    console.log(this)
 }
-user.listHobbies()
 
-//testing to see if clone works
+
+let bob=new User("bob")
