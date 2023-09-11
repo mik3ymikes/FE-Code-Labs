@@ -133,3 +133,24 @@
 // let blah=new ah
 
 // blah.add1(2,4)
+
+
+// function Person(name,age,blah){
+//     this.name=name,
+//     this.age=age,
+//     this.blah=blah
+// }
+
+
+// let mike=new Person("mike", 34, "idk")
+// let nick=new Person("nick", 35, "iyes")
+
+
+// Person.prototype.isCool=function(){
+//     console.log(this.name +"is cool")
+// }
+
+// console.log(mike)
+// console.log(nick)
+
+// nick.isCool()
