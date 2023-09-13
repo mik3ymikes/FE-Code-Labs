@@ -163,4 +163,70 @@
 
 
 
+//IBSN 10 dig
+//7 
 
+class Book{
+    #IBSN
+  
+    constructor(title, author, yearPublished, IBSN){
+        this.title=title
+        this.author=author
+        this.yearPublished=yearPublished
+        this.#IBSN=IBSN
+    }
+    
+    // pushMet(this){
+    //     for(items of this){
+    //         console.log(items)
+    //     }
+    // }
+
+
+}
+
+
+
+class Library{
+    constructor(){
+        
+        
+    }
+    
+    
+}
+
+let blah = new Book("hello", "jr", 1993, 1020323020302)
+// Library=(...blah)
+// let blah2 = new Book("hell22o", "j222222r", 1922293, 1020323020302)
+// blah.pushMet()
+
+console.log(blah.IBSN)
+
+
+
+// let array=[]
+// array.push(blah)
+// console.log(array)
+
+
+
+
+
+
+// let meh={
+//     name:"mike",
+//     job:"teacher"
+// }
+
+// let Arr={}
+// let Arr2=[]
+
+// for(i in meh){
+//     console.log(i, meh[i])
+//     Arr=(i, meh[i])
+//     Arr2.push((i, meh[i]))
+// }
+
+// console.log(Arr2)
+// console.log(Arr)
