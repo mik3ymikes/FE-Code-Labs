@@ -233,3 +233,107 @@
 // let{firstName,lastName}=getPerson() || {}
 
 // console.log(firstName,lastName)
+
+
+// let member ={
+//     id: 1,
+//     name:{
+//         firstName:"sonya",
+//         lastName:"Sangha"
+//     }
+// }
+
+// let name={
+//     firstName:"me",
+//     lastName:"bob"
+// }
+// // //this is how u can further destruct nested objects
+// // let {id, name:{firstName:meh, lastName:saw}}=member
+
+// // console.log(saw)
+
+
+
+// function blah({firstName, lastName}) {
+//    return  {firstName} + {lastName}
+// // return  `${firstName} ${lastName}`
+// }
+
+// console.log(blah(name)) ////idk didnt work as expected. 
+
+
+// let ran={
+//     name:"dad",
+//     age:23,
+//     fav:"soda"
+// }
+
+
+// let {name:fname, ...rname}=ran
+// console.log(rname)
+
+
+
+
+
+
+// let arr2=[1, 3, 4, 5]
+
+
+// let [x, y, ...z]=arr2
+// console.log(z)
+
+
+// const temps=[2, 43, 54, 3, 34,]
+
+// let anws=Math.min(...temps)
+// console.log(anws)
+
+
+// console.log(..."blahblahblah")
+
+
+// let arr2=[1, 3, 4, 5]
+
+// let fam=["ap", "dod", "jah"]
+
+// let fullFam=[arr2,fam]
+
+// console.log(fullFam)
+
+// let newFam=[...arr2,"bush","dog",...fam]///////must do spreaed before both!!@!
+// console.log(newFam)
+
+
+///copying arrays and assigning  to same values...are refrence type so they will be linked
+
+
+// let books=["harryp", "lilcrit", "goose"]
+
+// let cookies=books
+
+// books.push("nah")
+// console.log(cookies)
+//Super important didnt reallyknow that they linked ...ref point
+// a spread will stop this tho
+
+// let books=["harryp", "lilcrit", "goose"]
+
+// let cookies=[...books,  "nah"]
+
+// console.log(books)
+// console.log(cookies)
+
+function square(n){
+    return 2
+}
+
+console.log(square(2))
+
+
+for(let i=1; i<3; i++){
+    console.log("hey")
+    for(let j=1; j<3; j++){
+        console.log("sup")
+    }
+}
