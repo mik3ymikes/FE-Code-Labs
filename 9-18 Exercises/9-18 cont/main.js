@@ -81,6 +81,12 @@
 // }
 
 
+// #6
+
+let itemList=document.querySelector(".itemList")
+
+// newLi.textContent="hi"
+
 const items = [
     {name: 'Item 1'},
     {name: 'Item 2'},
@@ -89,11 +95,27 @@ const items = [
 ];
 
 
+
+
+
+
+
+
 items.forEach(items=>{
-    for(let item in items){
-        console.log({item})
+    for(let[key, value] of Object.entries(items)){
+        let newLi=document.createElement("li")
+        // newLi={value}
+        // console.log({key})
+        // console.log({value})
+        // newLi.textContent=value
+        newLi=value
+        
+        itemList.append(value)
+        
+
     }
 })
+
 
 
 
