@@ -109,8 +109,12 @@ items.forEach(items=>{
         // console.log({value})
         // newLi.textContent=value
         newLi=value
+        console.log(newLi)
+        
+        let blah=document.createElement("br")
         
         itemList.append(value)
+        itemList.append(blah)
         
 
     }
