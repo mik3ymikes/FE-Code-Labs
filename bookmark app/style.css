@@ -6,13 +6,15 @@ body, .jumbotron{
 
 .floater{
 background: white;
-font-size: 19px;
-line-height: 1.5;
-border-radius: 5px;
-max-width: 500px;
-margin: 0 auto;
-position: relative;
+/* font-size: 19px; */
+/* line-height: 1.5; */
+
+/* max-width: 500px; */
+/* margin: 0 auto; */
+/* position: relative; */
+margin-bottom: 30px;
 transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+z-index: 11;
 }
 
 .floater input[type=text]{
@@ -44,6 +46,8 @@ floater-bottom button{
     height: 100%;
     opacity: 0;
     transition: 0.3s ease opacity;
+    z-index: 10;
+    pointer-events: none;
 }
 
 
@@ -59,4 +63,50 @@ body.show-floater .floater input[type=text]{
 
 body.show-floater .overlay{
     opacity: 1;
+    pointer-events: all;
+}
+
+.content{
+    max-width: 500px;
+margin: 0 auto;
+font-size: 19px; 
+line-height: 1.5; 
+position: relative;
+border-radius: 5px;
+}
+
+.bookmark{
+    display: block;
+    background: white;
+    color:#999;
+    padding: 20px;
+    transition: 0.3s ease all;
+    border-bottom: 1px solid #DDD;
+    font-size: 16px;
+   
+
+
+}
+
+.bookmarks-list{
+    z-index: 9;
+    position: relative;
+}
+
+.bookmark:hover{
+    color:#1ce;
+    text-decoration: none;
+   
+}
+
+
+.bookmark:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bookmark:first-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 0;
 }

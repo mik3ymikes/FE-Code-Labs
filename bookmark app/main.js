@@ -20,3 +20,31 @@ function closeFloater(){
 
     }
 }
+
+const bookmarksList=document.querySelector(".bookmarks-list")
+const bookmarkForm=document.querySelector(".bookmark-form")
+const bookmarkInput=bookmarkForm.querySelector("input[type=text]")
+
+function createBookmark(e){
+    e.preventDefault()
+
+    console.log("processing form")
+    const title=bookmarkInput.value 
+    const bookmark=document.createElement("a")
+    bookmark.className="bookmark"
+    bookmark.textContent=title
+    bookmark.href="#"
+    bookmark.target="_blank"
+    
+    
+    bookmarksList.appendChild(bookmark)
+
+    bookmarkForm.reset()
+}
+
+
+
+
+
+
+bookmarkForm.addEventListener("submit", createBookmark)
