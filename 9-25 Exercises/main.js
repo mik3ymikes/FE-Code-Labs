@@ -61,3 +61,9 @@ objs = {
 };
 var arr;
 arr = ["hi", "yo"];
+function addNum(value1, value2) {
+    console.log(value1 + value2);
+    console.log(value2);
+    return value2;
+}
+addNum(2, 2);

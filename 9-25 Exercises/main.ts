@@ -109,3 +109,11 @@ arr=["hi", "yo"]
 
 
 
+function addNum<Type>(value1:Type, value2:Type){
+    console.log(value1 + value2)
+    console.log(value2)
+    return value2
+}
+
+addNum<number>(2,2)
+addNum<string>("2","2")
