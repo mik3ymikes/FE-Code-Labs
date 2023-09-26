@@ -1,0 +1,2 @@
+var person;
+person = "mike";
